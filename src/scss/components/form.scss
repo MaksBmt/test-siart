@@ -1,0 +1,151 @@
+.form {
+    padding: 24px 20px;
+
+    @media(min-width:$lg){
+        padding: 48px 108px;
+    }
+
+    @media(min-width:1920px){
+        padding: 68x 130px;
+    }
+
+    &__wrap {
+        position: relative;
+        padding: 16px;
+        border-radius: 24px;
+        border: 1px solid var(--blue);
+        box-sizing: border-box;
+
+        @media(min-width:$lg){
+            padding: 16px 24px;
+        }
+
+        @media(min-width:1920px){
+            padding: 20x 32px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 36px;
+            height: 36px;
+            top: 16;
+            left: 16;
+            background-image: url(../img/document.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            @media(min-width:$lg){
+                width: 48px;
+                height: 48px;
+            }
+
+            @media(min-width:1920px){
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    &__wrapper {
+        @media(min-width: $tablet){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        padding-left: 52px;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: black;
+        box-sizing: border-box;
+
+        @media(min-width:$lg){
+            font-size: 16px;
+        }
+
+        @media(min-width:1920px){
+            padding-left: 75px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    &__note {
+        padding-left: 52px;
+        margin-bottom: 28px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--grey);
+
+        @media(min-width:1920px){
+            padding-left: 75px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__fieldset {
+        &:nth-child(n+2) {
+            margin-top: 8px;
+        }
+
+        @media(min-width:$tablet) {
+            width: 32.5%;
+            margin-bottom: 16px;
+
+            &:nth-child(n+2) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+
+        @media(min-width: $tablet){
+            flex-direction: row;
+        }
+    }
+
+    &__button {
+        @include button();
+        outline: none;
+        width: 200px;
+        padding: 8px 0;
+        border-radius: 8px;
+        background-color: var(--blue);
+
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+
+        @media(min-width:1920px){
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &:hover {
+            background-color: #3886E1;
+        }
+
+        &:active {
+            background-color: #2176DA;
+            outline: none;
+        }
+    }
+}

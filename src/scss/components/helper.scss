@@ -1,0 +1,49 @@
+.helper {
+    display: flex;
+
+    &__button {
+        @include button();
+        position: relative;
+        padding: 6px;
+        width: 32px;
+        height: 32px;
+        border-radius: 7px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px 0px #1C2D401A;
+
+        @media(min-width: $lg) {
+            width: 28px;
+            height: 28px;
+        }
+
+        &:nth-child(n+2) {
+            margin-left: 6px;
+        }
+
+        &:hover {
+            .helper__icon {
+                color: var(--blue);
+            }
+        }
+
+        &:active {
+            background-color: var(--blue);
+
+            .helper__icon {
+                color: white;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        @include transfor-center();
+
+
+        &--favorites {
+            width: 18px;
+        }
+    }
+}

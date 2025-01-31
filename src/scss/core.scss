@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+ :root {
+  --grey-light: #F5F8FA;
+  --grey: #6A727B;
+
+  --dark: #1a1a1a;
+
+  --blue: #4092F1;
+  --blue-light: #DAE8FA;
+
+  --green: #64B847;
+  --green-light: #F0F7EE;
+
+  --red: #EC7B52;
+  --red-light:#F7EEEE;
+ }
+
+html {
+  // font-size: 22px;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-decoration-skip: objects;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[alt] {
+  font-size: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+*:hover {
+  transition: all 0.2s ease 0s;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.indicator {
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 12px;
+
+    @media(min-width: $lg) {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    @media(min-width: 1920px) {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 4px 8px;
+    }
+
+    &--in-stock {
+        color: var(--green);
+        background-color: var(--green-light);
+    }
+
+    &--hit {
+        color: white;
+        background-color: var(--red);
+    }
+
+    &--nope {
+        color: var(--red);
+        background-color: var(--red-light);
+    }
+
+    &--promotion {
+        color: white;
+        background-color: var(--green);
+    }
+
+    &--new {
+        color: white;
+        background-color: var(--blue);
+    }
+
+    &:nth-child(n+2) {
+        margin-left: 4px;
+    }
+
+}

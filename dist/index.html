@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание для Siart</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <main>
+    <section class="products">
+      <div class="products__wrap wrap">
+        <h1 class="products__title">Новые поступления</h1>
+        <div class="products__swiper swiper">
+          <ul class="products__list swiper-wrapper">
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Ингалятор компрессорный компактный MED-125</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">24 529 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions actions">
+                <button type="button" class="actions__change actions__change--minus">
+                  <svg class="actions__icon actions__icon--minus">
+                    <use href="img/icons/icons.svg#minus"></use>
+                  </svg>
+                </button>
+                <span class="actions__value">1</span>
+                <button type="button" class="actions__change actions__change--plus">
+                  <svg class="actions__icon">
+                    <use href="img/icons/icons.svg#plus1"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Облучатель-рециркулятор медицинский СH111-115</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--nope">Нет в наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">6 284 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions">
+                <button type="button" class="card__button card__button--order">Заказать</button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Тонометр механический CS Medica CS-106 с фонедоскопом</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+                <span class="indicator indicator--promotion">Акция</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">1 494 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions">
+                <button type="button" class="card__button card__button--cart"><span>В корзину</span></button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Термометр TC-7AMK для холодильных</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+                <span class="indicator indicator--new">Новинка</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">994 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions ">
+                <button type="button" class="card__button card__button--cart"><span>В корзину</span></button>
+              </div>
+            </li>
+
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image1.webp" type="image/webp"><img src="img/image1.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Ингалятор компрессорный компактный MED-125</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">24 529 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions actions">
+                <button type="button" class="actions__change actions__change--minus">
+                  <svg class="actions__icon actions__icon--minus">
+                    <use href="img/icons/icons.svg#minus"></use>
+                  </svg>
+                </button>
+                <span class="actions__value">1</span>
+                <button type="button" class="actions__change actions__change--plus">
+                  <svg class="actions__icon">
+                    <use href="img/icons/icons.svg#plus1"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image2.webp" type="image/webp"><img src="img/image2.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Облучатель-рециркулятор медицинский СH111-115</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--nope">Нет в наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">6 284 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions">
+                <button type="button" class="card__button card__button--order">Заказать</button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Тонометр механический CS Medica CS-106 с фонедоскопом</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+                <span class="indicator indicator--promotion">Акция</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">1 494 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions">
+                <button type="button" class="card__button card__button--cart"><span>В корзину</span></button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Термометр TC-7AMK для холодильных</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">994 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions ">
+                <button type="button" class="card__button card__button--cart"><span>В корзину</span></button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image3.webp" type="image/webp"><img src="img/image3.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Тонометр механический CS Medica CS-106 с фонедоскопом</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+                <span class="indicator indicator--promotion">Акция</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">1 494 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions">
+                <button type="button" class="card__button card__button--cart"><span>В корзину</span></button>
+              </div>
+            </li>
+            <li class="card swiper-slide">
+              <div class="card__wrap-img">
+                <picture><source srcset="img/image4.webp" type="image/webp"><img src="img/image4.webp" alt="" class="card__img"></picture>
+                <div class="helper card__helper">
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon">
+                      <use href="img/icons/icons.svg#comparison"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="helper__button">
+                    <svg class="helper__icon helper__icon--favorites">
+                      <use href="img/icons/icons.svg#favorites"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card__wrapper">
+                  <span class="card__sku">Арт. 4501390</span>
+                  <svg class="card__chat">
+                    <use href="img/icons/icons.svg#chat"></use>
+                  </svg>
+                  <span class="card__counter">5</span>
+                </div>
+                <a href="#" class="card__viewing viewing">Быстрый просмотр</a>
+              </div>
+              <h2 class="card__title">Термометр TC-7AMK для холодильных</h2>
+              <div class="card__indicator">
+                <span class="indicator indicator--in-stock">В наличии</span>
+                <span class="indicator indicator--hit">Хит</span>
+              </div>
+              <div class="card__wrap-price">
+                <span class="card__price-old">1 494 &#8381;</span>
+                <span class="card__price">994 &#8381; <span class="card__marker">шт.</span></span>
+              </div>
+              <div class="card__actions ">
+                <button type="button" class="card__button card__button--cart"><span>В корзину</span></button>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination products__pagination"></div>
+        </div>
+
+        <div class="leaflet products__leaflet">
+          <button class="leaflet__button leaflet__button--next">
+            <svg class="leaflet__icon">
+              <use href="img/icons/icons.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="leaflet__button leaflet__button--prev">
+            <svg class="leaflet__icon leaflet__icon--right">
+              <use href="img/icons/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="form wrap">
+      <div class="form__wrap">
+        <h2 class="form__title">Не нашли ответа на свой вопрос?</h2>
+        <p class="form__note">Напишите нам, и мы предоставим необходимую информацию.</p>
+        <form action="#" method="post">
+          <div class="form__wrapper">
+            <div class="form__fieldset fieldset">
+              <div class="fieldset__wrap">
+                <input type="text" name="name" class="fieldset__input" id="name" placeholder="Имя*" required>
+                <button type="button" class="fieldset__button"></button>
+              </div>
+              <p class="fieldset__error"></p>
+            </div>
+            <div class="form__fieldset fieldset">
+              <div class="fieldset__wrap">
+                <input type="tel" name="phone" class="fieldset__input" id="phone" placeholder="Телефон*" required>
+                <button type="button" class="fieldset__button"></button>
+              </div>
+              <p class="fieldset__error"></p>
+            </div>
+            <div class="form__fieldset fieldset">
+              <div class="fieldset__wrap">
+                <input type="email" name="email" class="fieldset__input" id="email" placeholder="E-mail*" required>
+                <button type="button" class="fieldset__button"></button>
+              </div>
+              <p class="fieldset__error"></p>
+            </div>
+          </div>
+          <textarea class="fieldset__input fieldset__input--textarea" name="text" id="text" spellcheck="true" rows="5"
+            placeholder="Вопрос" required></textarea>
+          <p class="fieldset__error fieldset__error--textarea"></p>
+
+          <div class="form__box">
+            <button type="submit" class="form__button">Задать вопрос</button>
+            <div class="fieldset__wrap fieldset__wrap--checkbox">
+
+              <input type="checkbox" name="agreement" id="agreement" class="fieldset__checkbox">
+              <label for="agreement" class="fieldset__label">Я согласен с условиями <a href="#"
+                  class="fieldset__link">пользовательского соглашения.</a></label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+    <div id="popup" class="popup">
+      <button data-close type="button" class="popup__close"></button>
+      <div class="popup__wrapper">
+         <div class="popup__img"></div>
+         <span class="popup__note">Спасибо!</span>
+         <span class="popup__text">Вопрос отправлен</span>
+         <button type="button" class="popup__end">Хорошо :)</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="js/app.min.js"></script>
+
+</body>
+
+</html>
