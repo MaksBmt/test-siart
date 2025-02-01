@@ -1,8 +1,8 @@
 // @font-face {
 //     // font-family: "Roboto-Light";
 //     // src: local("Roboto Light.woff"),local("Roboto-Light.woff"),
-//     //   url('../../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
-//     //   url('../../fonts/Roboto/Roboto-Light.woff') format('woff');
+//     //   url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+//     //   url('../fonts/Roboto/Roboto-Light.woff') format('woff');
 //     // font-weight: 300;
 //     // font-style: normal;
 //     // font-display: swap;
@@ -10,7 +10,7 @@
   @font-face {
     font-family: "Inter";
     src: local("Inter_18pt-Regular.woff2"), local("Inter 18pt-Regular.woff2"),
-      url('../../fonts/Inter_18pt-Regular.woff2') format('woff2');
+      url('../fonts/Inter_18pt-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -18,7 +18,7 @@
   @font-face {
     font-family: "Inter";
     src: local("Inter_18pt-Medium.woff2"), local("Inter 18pt-Medium.woff2"),
-      url('../../fonts/Inter_18pt-Medium.woff2') format('woff2');
+      url('../fonts/Inter_18pt-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -26,7 +26,7 @@
   @font-face {
     font-family: "Inter";
     src: local("Inter_18pt-SemiBold.woff2"), local("Inter 18pt-SemiBold.woff2"),
-      url('../../fonts/Inter_18pt-SemiBold.woff2') format('woff2');
+      url('../fonts/Inter_18pt-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -34,7 +34,7 @@
   @font-face {
     font-family: "Manrope";
     src: local("Manrope-Regular.woff2"), local("Manrope Regular.woff2"),
-      url('../../fonts/Inter_18pt-Regular.woff2') format('woff2');
+      url('../fonts/Inter_18pt-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -42,7 +42,7 @@
   @font-face {
     font-family: "Manrope";
     src: local("Manrope-Bold.woff2"), local("Manrope Bold.woff2"),
-      url('../../fonts/Inter_18pt-Bold.woff2') format('woff2');
+      url('../fonts/Inter_18pt-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;

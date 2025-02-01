@@ -64,10 +64,10 @@ export default class Popup {
         }
     }
 
-    closePopup() {
-        // this.popup.classList.add('modal-out'); 
-        this.popup.classList.remove('popup__show');
+    closePopup(evt) {
+        this.popup.classList.add('modal-out'); 
         this.popup.addEventListener('animationend', this.animateOut);
+        // this.popup.classList.remove('popup__show');
     }
 
     overlayClickHandler() {

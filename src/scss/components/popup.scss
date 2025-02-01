@@ -157,34 +157,66 @@
     display: flex;
 }
 
-// .modal-in {
-//     animation: modal-in 0.5s ease-out 1;
-// }
+.modal-in {
+    animation: modal-in 0.5s ease-out 1;
 
-// .modal-out {
-//     animation: modal-out 0.5s ease-in 1;
-// }
+    @media(min-width:$tablet){
+        animation: modal-in-tablet 0.5s ease-out 1;
+    }
+}
 
-// @keyframes modal-in {
-//     from {
-//         transform: translateY(-150%);
-//         opacity: 0;
-//     }
+.modal-out {
+    animation: modal-out 0.5s ease-in 1;
 
-//     to {
-//         transform: translateY(0%);
-//         opacity: 1;
-//     }
-// }
+    @media(min-width:$tablet){
+        animation: modal-out-tablet 0.5s ease-in 1;
+    }
+}
 
-// @keyframes modal-out {
-//     from {
-//         transform: translateY(0%);
-//         opacity: 1;
-//     }
+@keyframes modal-in {
+    from {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
 
-//     to {
-//         transform: translateY(150%);
-//         opacity: 0;
-//     }
-// }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-out {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+}
+
+@keyframes modal-in-tablet {
+    from {
+        transform: translate(-50%, -150%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-out-tablet {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(-50%, 150%);
+        opacity: 0;
+    }
+}
