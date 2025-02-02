@@ -169,7 +169,7 @@ export default class Form {
     }
 
     _handleChangeInput({ target }) {
-        this._validate(target);
+        setTimeout(()=>this._validate(target),200);
     }
 
     _handleClickButtonSubmit(evt) {
