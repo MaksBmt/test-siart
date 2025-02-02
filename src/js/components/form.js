@@ -7,6 +7,7 @@ export default class Form {
         this.errorTextArea = this.form.querySelector('.fieldset__error--textarea');
         this.buttonSubmit = this.form.querySelector('.form__button');
         this.checkbox = this.form.querySelector('.fieldset__checkbox');
+        this.isButtonClick = true;
 
         this._handlerInputValue = this._handlerInputValue.bind(this);
         this._handleClickButtonClose = this._handleClickButtonClose.bind(this);
@@ -78,12 +79,14 @@ export default class Form {
 
     _setError(input, textError) {
         const parentNode = input.closest('.fieldset');
-        parentNode.querySelector('input').classList.add('fieldset__input--error');
-        parentNode.querySelector('.fieldset__wrap--not-empty').classList.remove('fieldset__wrap--not-empty');
+        if (parentNode) {
+            parentNode.querySelector('input').classList.add('fieldset__input--error');
+            parentNode.querySelector('.fieldset__wrap--not-empty').classList.remove('fieldset__wrap--not-empty');
 
-        const errorBox = parentNode.querySelector('.fieldset__error');
-        errorBox.style.display = 'block';
-        errorBox.textContent = textError;
+            const errorBox = parentNode.querySelector('.fieldset__error');
+            errorBox.style.display = 'block';
+            errorBox.textContent = textError;
+        }
     }
 
     _setChecked(input) {
@@ -157,19 +160,31 @@ export default class Form {
         this._resetError(target);
         if (target.id !== 'text') {
             this._toggleEmpty(target);
+
+            const parent = target.closest('.fieldset__wrap');
+            const buttonClose = parent.querySelector('.fieldset__button');
+            buttonClose.addEventListener("mousedown", () => {
+                this.isButtonClick = false;
+            });
         }
     }
 
-    _handleClickButtonClose({ target }) {
+    _handleClickButtonClose(evt) {
+        evt.stopPropagation();
+        const target = evt.target;
 
         const parentNode = target.closest('.fieldset__wrap');
         parentNode.querySelector('input').value = '';
         parentNode.classList.remove('fieldset__wrap--not-empty');
         parentNode.classList.remove('fieldset__wrap--checked');
+        this.isButtonClick = true;
+        parentNode.dispatchEvent(new Event("change", { bubbles: true }));
     }
 
     _handleChangeInput({ target }) {
-        setTimeout(()=>this._validate(target),200);
+        if (this.isButtonClick) {
+            this._validate(target);
+        }
     }
 
     _handleClickButtonSubmit(evt) {
@@ -198,6 +213,7 @@ export default class Form {
 
         if (this.checkbox.checked === true) {
             isCheckbox = true;
+            this.checkbox.classList.remove('fieldset__checkbox--error');
         } else {
             this.checkbox.classList.add('fieldset__checkbox--error');
         }
