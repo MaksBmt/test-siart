@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: local("Manrope-Bold.woff2"), local("Manrope Bold.woff2"), url("../fonts/Inter_18pt-Bold.woff2") format("woff2");
+  src: local("Manrope-Bold.woff2"), local("Manrope Bold.woff2"), url("../fonts/Manrope-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

@@ -1,12 +1,3 @@
-// @font-face {
-//     // font-family: "Roboto-Light";
-//     // src: local("Roboto Light.woff"),local("Roboto-Light.woff"),
-//     //   url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
-//     //   url('../fonts/Roboto/Roboto-Light.woff') format('woff');
-//     // font-weight: 300;
-//     // font-style: normal;
-//     // font-display: swap;
-//   }
   @font-face {
     font-family: "Inter";
     src: local("Inter_18pt-Regular.woff2"), local("Inter 18pt-Regular.woff2"),
@@ -42,7 +33,7 @@
   @font-face {
     font-family: "Manrope";
     src: local("Manrope-Bold.woff2"), local("Manrope Bold.woff2"),
-      url('../fonts/Inter_18pt-Bold.woff2') format('woff2');
+      url('../fonts/Manrope-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
